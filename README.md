@@ -1,7 +1,6 @@
 # 🎄 Advent of Code 2024 🎅
 
-![Advent of Code Banner](![image](https://github.com/user-attachments/assets/27ae4de2-48d2-4b89-b150-079b939d9e84)
-) <!-- Replace with your custom banner -->
+![Advent of Code Banner](https://github.com/23og2704/AoC24/blob/master/resources/header.png) <!-- Replace with your custom banner -->
 
 ---
 
