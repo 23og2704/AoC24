@@ -1,6 +1,6 @@
 # 🎄 Advent of Code 2024 🎅
 
-![Advent of Code Banner](https://via.placeholder.com/1200x400?text=Advent+of+Code+2024+%7C+25+Days+of+Coding+Puzzles) <!-- Replace with your custom banner -->
+![Advent of Code Banner]([https://via.placeholder.com/1200x400?text=Advent+of+Code+2024+%7C+25+Days+of+Coding+Puzzles](https://community.alteryx.com/t5/General-Discussions/Almost-That-Time-of-the-Year-Advent-of-Code-2022-Join-Us/td-p/1033478)) <!-- Replace with your custom banner -->
 
 ---
 
