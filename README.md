@@ -1,11 +1,6 @@
 # 🎄 Advent of Code 2024 🎅
 
-![Advent of Code Banner]([https://via.placeholder.com/1200x400?text=Advent+of+Code+2024+%7C+25+Days+of+Coding+Puzzles](https://community.alteryx.com/t5/General-Discussions/Almost-That-Time-of-the-Year-Advent-of-Code-2022-Join-Us/td-p/1033478)) <!-- Replace with your custom banner -->
-
----
-
-### 🗓️ Progress: **0/25 Completed**
-![Progress Bar]([https://progress-bar.dev/0/?scale=25&width=400&suffix=%20days](https://geps.dev/progress/5?scale=25&width=400&suffix=%20days&dangerColor=FF0000&warningColor=FFA500&successColor=008000)) <!-- Update dynamically -->
+![Advent of Code Banner](https://github.com/23og2704/AoC24/blob/master/resources/header.png) <!-- Replace with your custom banner -->
 
 ---
 
@@ -22,4 +17,4 @@
 
 ---
 
-### ❄️ Let’s Code, One Puzzle at a Time!
+### ❄️ i better do good
