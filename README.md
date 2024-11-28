@@ -5,7 +5,7 @@
 ---
 
 ### 🗓️ Progress: **0/25 Completed**
-![Progress Bar](https://progress-bar.dev/0/?scale=25&width=400&suffix=%20days) <!-- Update dynamically -->
+![Progress Bar]([https://progress-bar.dev/0/?scale=25&width=400&suffix=%20days](https://geps.dev/progress/5?scale=25&width=400&suffix=%20days&dangerColor=FF0000&warningColor=FFA500&successColor=008000)) <!-- Update dynamically -->
 
 ---
 
