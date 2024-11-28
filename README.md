@@ -17,4 +17,4 @@
 
 ---
 
-### ❄️ Let’s Code, One Puzzle at a Time!
+### ❄️ i better do good
