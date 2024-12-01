@@ -1,13 +1,37 @@
-# 🎄 Advent of Code 2024 🎅
+# 🎄 Advent of Code 2024 🎄
 
-![Advent of Code Banner](https://github.com/23og2704/AoC24/blob/master/resources/header.png) <!-- Replace with your custom banner -->
+![Advent of Code Banner](https://github.com/23og2704/AoC24/blob/master/resources/header2.jpg) <!-- Replace with your custom banner -->
 
 ---
 
 ## 🚀 Daily Challenges
-🎁 **December 1** - Coming Soon!  
-🎁 **December 2** - Coming Soon!  
-🎁 **...** - Stay tuned for updates!
+| Day | Name               | Stars  |
+|-----|--------------------|--------|
+| 01  |                    |        |
+| 02  |                    |        |
+| 03  |                    |        |
+| 04  |                    |        |
+| 05  |                    |        |
+| 06  |                    |        |
+| 07  |                    |        |
+| 08  |                    |        |
+| 09  |                    |        |
+| 10  |                    |        |
+| 11  |                    |        |
+| 12  |                    |        |
+| 13  |                    |        |
+| 14  |                    |        |
+| 15  |                    |        |
+| 16  |                    |        |
+| 17  |                    |        |
+| 18  |                    |        |
+| 19  |                    |        |
+| 20  |                    |        |
+| 21  |                    |        |
+| 22  |                    |        |
+| 23  |                    |        |
+| 24  |                    |        |
+| 25  |                    |        |
 
 ---
 
