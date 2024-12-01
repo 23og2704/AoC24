@@ -7,7 +7,7 @@
 ## 🚀 Daily Challenges
 | Day | Name               | Stars  |
 |-----|--------------------|--------|
-| 01  |                    |        |
+| 01  | Historian Hysteria | ⭐⭐  |
 | 02  |                    |        |
 | 03  |                    |        |
 | 04  |                    |        |
