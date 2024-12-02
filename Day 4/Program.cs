@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Day_3
+namespace Day_4
 {
     internal class Program
     {
@@ -13,7 +13,6 @@ namespace Day_3
         {
             string[] lines = File.ReadAllLines("input.txt");
             int answer = 0;
-
 
             return answer;
         }
