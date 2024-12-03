@@ -7,8 +7,8 @@
 ## 🚀 Daily Challenges
 | Day | Name               | Stars  |
 |-----|--------------------|--------|
-| 01  |                    |        |
-| 02  |                    |        |
+| 01  | Historian Hysteria | ⭐⭐  |
+| 02  | Red-Nosed Reports  | ⭐⭐  |
 | 03  |                    |        |
 | 04  |                    |        |
 | 05  |                    |        |
