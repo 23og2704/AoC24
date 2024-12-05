@@ -11,7 +11,7 @@
 | 02  | Red-Nosed Reports  | ⭐⭐  |
 | 03  | Mull It Over       | ⭐⭐  |
 | 04  | Ceres Search       | ⭐⭐  |
-| 05  |                    |        |
+| 05  | Print Queue        | ⭐⭐  |
 | 06  |                    |        |
 | 07  |                    |        |
 | 08  |                    |        |
