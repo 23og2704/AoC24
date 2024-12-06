@@ -12,7 +12,7 @@
 | 03  | Mull It Over       | ⭐⭐  |
 | 04  | Ceres Search       | ⭐⭐  |
 | 05  | Print Queue        | ⭐⭐  |
-| 06  |                    |        |
+| 06  | Guard Gallivant    | ⭐⭐  |
 | 07  |                    |        |
 | 08  |                    |        |
 | 09  |                    |        |
