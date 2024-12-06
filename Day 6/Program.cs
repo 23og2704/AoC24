@@ -13,6 +13,17 @@ namespace Day_6
         {
             string[] lines = File.ReadAllLines("input.txt");
             int answer = 0;
+            int x = 0;
+            int y = 0;
+
+            HashSet<string> set = new HashSet<string>();
+            
+            for (int i = 0; i < lines.Length; i++)
+            {
+                set.Add(lines[i]);
+            }
+
+
 
 
             return answer;
