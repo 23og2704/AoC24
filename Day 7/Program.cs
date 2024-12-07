@@ -9,27 +9,64 @@ namespace Day_7
 {
     internal class Program
     {
-        static int part1()
+        static long part1()
         {
             string[] lines = File.ReadAllLines("input.txt");
-            int answer = 0;
+            long answer = 0;
 
+            foreach (string s in lines)
+            {
+                var tSplit = s.Split(':');
+                long target = long.Parse(tSplit[0].Trim());
+                var numSplit = tSplit[1].Trim().Split(' ');
 
+                List<long> numbers = new List<long>();
+
+                foreach (var num in numSplit)
+                {
+                    numbers.Add(long.Parse(num));
+                }
+
+                if (search(numbers, target, 0, numbers[0]))
+                {
+                    answer += target;
+                }
+            }
             return answer;
         }
-
-        static int part2()
+        static bool search(List<long> numbers, long target, int index, long value)
         {
-            string[] lines = File.ReadAllLines("input.txt");
-            int answer = 0;
+            if (index == numbers.Count - 1)
+            {
+                if (value == target)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
 
-
-            return answer;
+            if (search(numbers, target, index + 1, value + numbers[index + 1]))
+            {
+                return true;
+            }
+            if (search(numbers, target, index + 1, value * numbers[index + 1]))
+            {
+                return true;
+            }
+            string c = value + numbers[index + 1].ToString();
+            if (search(numbers, target, index + 1, long.Parse(c)))
+            {
+                return true;
+            }
+            return false;
         }
+
         static void Main(string[] args)
         {
-            Console.WriteLine($"Part 1: {part1()}");
-            Console.WriteLine($"Part 2: {part2()}");
+            Console.WriteLine($"Day 1: {part1()}");
             Console.ReadKey();
         }
     }
