@@ -103,6 +103,57 @@ namespace Day_8
                 }
             }
             HashSet<(int x, int y)> antinodes = new HashSet<(int x, int y)>();
+            for (int i = 0; i < validFreqGroups.Count; i++)
+            {
+                List<Antenna> freqAntennas = validFreqGroups[i].Value;
+                int groupSize = freqAntennas.Count;
+
+                for (int j = 0; j < groupSize - 1; j++)
+                {
+                    for (int k = j + 1; k < groupSize; k++)
+                    {
+                        Antenna antA = freqAntennas[j];
+                        Antenna antB = freqAntennas[k];
+                        int dx = antB.X - antA.X;
+                        int dy = antB.Y - antA.Y;
+
+                        int a = Math.Abs(dx);
+                        int b = Math.Abs(dy);
+                        int gcd = 0;
+
+                        int tempA = a;
+                        int tempB = b;
+                        while (tempB != 0)
+                        {
+                            int temp = tempB;
+                            tempB = tempA % tempB;
+                            tempA = temp;
+                        }
+                        gcd = tempA;
+
+                        int stepX = dx / gcd;
+                        int stepY = dy / gcd;
+                        int currentX = antA.X;
+                        int currentY = antA.Y;
+
+                        while (currentX >= 0 && currentX < width && currentY >= 0 && currentY < height)
+                        {
+                            antinodes.Add((currentX, currentY));
+                            currentX += stepX;
+                            currentY += stepY;
+                        }
+
+                        currentX = antA.X - stepX;
+                        currentY = antA.Y - stepY;
+                        while (currentX >= 0 && currentX < width && currentY >= 0 && currentY < height)
+                        {
+                            antinodes.Add((currentX, currentY));
+                            currentX -= stepX;
+                            currentY -= stepY;
+                        }
+                    }
+                }
+            }
 
             return antinodes.Count;
         }
