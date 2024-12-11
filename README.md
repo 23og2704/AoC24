@@ -16,7 +16,7 @@
 | 07  | Bridge Repair           | ⭐⭐  |
 | 08  | Resonant Collinearity   | ⭐󠁪⭐  |
 | 09  | Disk Fragmenter         | ⭐󠁪⭐  |
-| 10  |                         |        |
+| 10  | Hoof It                 | ⭐󠁪⭐󠁪  |
 | 11  |                         |        |
 | 12  |                         |        |
 | 13  |                         |        |
