@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.IO;
-using System.Text;
-using System.Threading.Tasks;
+using System.Linq;
 
 namespace Day_19
 {
@@ -14,7 +12,6 @@ namespace Day_19
         static Dictionary<string, bool> cache = new Dictionary<string, bool>();
         static Dictionary<string, long> cache2 = new Dictionary<string, long>();
         static int maxLength;
-        static long count2;
 
         static void load()
         {
@@ -32,64 +29,78 @@ namespace Day_19
             {
                 return true;
             }
-            if(cache.ContainsKey(design)) return cache[design];
+            if (cache.ContainsKey(design)) return cache[design];
 
-            for (int i = 1; i < Math.Min(design.Length, maxLength)+1; i++)
+
+
+            for (int i = 1; i < Math.Min(design.Length, maxLength) + 1; i++)
             {
                 if (patterns.Contains(design.Substring(0, i)) && checkValid(design.Substring(i)))
                 {
                     cache.Add(design, true);
-                    return true; 
+                    return true;
                 }
             }
-            cache.Add(design, false);  
+            cache.Add(design, false);
             return false;
         }
         static long checkValid2(string design)
         {
+            long temp = 0;
+            int i = 0;
+
             if (design == "")
             {
-                return 0;
+                return 1;
             }
-            if (cache2.ContainsKey(design)) return cache2[design];
-
-            count2 = 0;
-            for (int i = 1; i < Math.Min(design.Length, maxLength) + 1; i++)
+            if (cache2.ContainsKey(design))
             {
-                if (patterns.Contains(design.Substring(0, i)))
+                return cache2[design];
+            }
+            foreach (string s in patterns.SkipWhile(x => x.Length > design.Length - i))
+            {
+                if (design.StartsWith(s))
                 {
-                    count2 += checkValid2(design.Substring(i));
+                    i++;
+                    temp += checkValid2(design.Substring(s.Length));
                 }
             }
-            cache2.Add(design, count2);
-            return count2;
+
+            //for (int i = 1; i < Math.Min(design.Length, maxLength) + 1; i++)
+            //{
+            //    if (patterns.Contains(design.Substring(0, i)))
+            //    {
+            //        temp += checkValid2(design.Substring(i));
+            //    }
+            //}
+
+            cache2.Add(design, temp);
+            return temp;
         }
         static long part1()
         {
-            long count = 0;
-            foreach (string design in designs)
-            {
-                if (checkValid(design))
-                {
-                    count += count2;
-                    
-                }
-            }
-            return count;
+            //long count = 0;
+            //foreach (string design in designs)
+            //{
+            //    if (checkValid(design))
+            //    {
+            //        count += count2;
+
+            //    }
+            //}
+            //count2 = 0;
+            //return count;
+            return 1;
         }
 
         static long part2()
         {
-            long count = 0;
+            long i = 0;
             foreach (string design in designs)
             {
-
-                if (checkValid(design))
-                {
-                    count += count2;
-                }
+                i += checkValid2(design);
             }
-            return count;
+            return i;
         }
         static void Main(string[] args)
         {
